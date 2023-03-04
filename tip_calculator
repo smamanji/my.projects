@@ -1,14 +1,18 @@
+# Tip Calculator App - to calculate tip & total amount payable
+# % tip on amount of food
+# tip amount = % 
+
 food_amount = float(input("Enter food amount $: "))
 print('\n')
 
-tip_percentage = float(input("Enter your tip %: ")) / 100 #(percentage)
+tip_percentage = float(input("Enter your tip percentage (%): ")) / 100 #(percentage)
 tip_amount = food_amount * tip_percentage
 total = food_amount + tip_amount
 
 print('\n')
 print('---------------------------')
-print("Food Amount: ", food_amount)
-print("Tip Percentage: ", tip_percentage)
+print("Food Amount: " + '$' + str(food_amount))
+print("Tip Percentage: " + str(tip_percentage) + " %")
 print("Tip: " + '$ ' + str(tip_amount))
 print("Total: " + '$ ' + str(total)) 
 print('---------------------------')
