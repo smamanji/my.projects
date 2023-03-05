@@ -1,0 +1,57 @@
+print("Welcome to my Computer Quiz Game (One of my first Projects) Completely Made in Python")
+print("\n")
+
+playing = input("Do you want to play? ")
+
+if playing.lower() != "yes": 
+    quit()
+print("\n")
+print("\n")
+print("""Okay! Let's play the quiz game :). For each correct answer you will get 1 point! 
+You will have 4 questions to answer
+Let's begin!
+""")
+score = 0
+
+print("\n")
+answer1 = input("Qns 1: What is the definition of CPU? ")
+if answer1.lower() == "central processing unit": 
+    print("Correct!")
+    score += 1
+    
+else: 
+    print("Incorrect!")
+
+print("\n")
+answer2 = input("Qns 2: Give the definition of GPU? ")
+if answer2.lower() == "graphics processing unit": 
+    print("Correct!")
+    score += 1
+    
+else: 
+    print("Incorrect!")
+
+print("\n")
+answer3 = input("Qns 3: Give the definition of RAM? ")
+if answer3.lower() == "random access memory": 
+    print("Correct!")
+    score += 1
+    
+else: 
+    print("Incorrect!")
+
+print("\n")    
+answer4 = input("Qns 4: Give the definition of PSU? ")
+if answer4.lower() == "power supply": 
+    print("Correct!")
+    score += 1
+    
+else: 
+    print("Incorrect!")
+
+print("\n") 
+print("------------TEST RESULT-------------")
+print("You got " + str(score) + " questions correct!")
+print("\n")
+print("You got " + str((score/4) * 100) + " %.")
+print("-------THE END - HAPPY DAYS :)--------")
