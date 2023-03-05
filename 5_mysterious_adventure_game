@@ -1,0 +1,44 @@
+print("-------------------------------------------------")
+print("WELCOME TO THE MYSTERIOUS ADVENTURE GAME")
+print("-------------------------------------------------")
+print("\n")
+name = input("Type your name: ")
+print("\n")
+print("Welcome", name, "to this mysterious adventure!")
+print("\n")
+answer = input("You are on a dirt road, it has come to an end and you can go left or right. Which way would you like to go, left/right? ").lower()
+
+if answer == "left":
+    answer = input("You now come to a river, you can walk around it or swim across. What would you like to do, walk/swim? ")
+    if answer == "swim": 
+        print("You started to swim across and were eaten by an alligator! So Sad!")
+    elif answer == "walk": 
+        print("You walked around the river for many miles and ran out of water. You lose! So sad!.")
+    else: 
+        print("Not a valid option. You lose!")
+
+elif answer == "right":
+        answer = input("You come to a bridge which looks wobbly. Do you want to cross it or head back? Type cross or back. ")
+    
+        if answer == "cross": 
+            answer = input("You cross the bridge and meet a stranger. Do you talk to him? Type yes or no.  ")
+            if answer == "yes":
+                print("You talk to the stranger and they give you gold coins. You suddenly move to the realm of winners! Well done!")
+                
+            elif answer == "no":
+                print("You ignore the stranger & they are offended and shoot you down. you lose! So sad!")
+                
+            else: 
+                print("Not a valid option. you lose! So sad!")
+        
+        elif answer == "back": 
+            print("You go back and you lose! So sad!.")
+
+        else: 
+            print("Not a valid option. You lose!")
+
+print("\n")
+print("-----------------------------------------")
+print("Thank you for playing this game", name)
+print("\n")
+print("-----------------------------------------")
